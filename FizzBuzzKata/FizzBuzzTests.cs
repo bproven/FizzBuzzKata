@@ -21,7 +21,7 @@ Fizz
 Buzz
 11
 Fizz
-13
+Fizz
 14
 FizzBuzz
 16
@@ -31,7 +31,7 @@ Fizz
 Buzz
 Fizz
 22
-23
+Fizz
 Fizz
 Buzz
 26
@@ -39,19 +39,19 @@ Fizz
 28
 29
 FizzBuzz
-31
-32
 Fizz
-34
+Fizz
+Fizz
+Fizz
 Buzz
 Fizz
-37
-38
+Fizz
+Fizz
 Fizz
 Buzz
 41
 Fizz
-43
+Fizz
 44
 FizzBuzz
 46
@@ -61,7 +61,7 @@ Fizz
 Buzz
 Fizz
 52
-53
+Fizz
 Fizz
 Buzz
 56
@@ -81,7 +81,7 @@ Fizz
 Buzz
 71
 Fizz
-73
+Fizz
 74
 FizzBuzz
 76
@@ -91,7 +91,7 @@ Fizz
 Buzz
 Fizz
 82
-83
+Fizz
 Fizz
 Buzz
 86
@@ -134,6 +134,12 @@ Buzz";
 		public void DivisibleByThreeAndFiveTest()
 		{
 			Assert.Equal( "FizzBuzz", FizzBuzz.GetOutput( 3 * 5 ) );
+		}
+
+		[Fact]
+		public void ExtraCredit1Test()
+		{
+			Assert.Equal( "Fizz", FizzBuzz.GetOutput( 13 ) );
 		}
 
 		[Fact]
