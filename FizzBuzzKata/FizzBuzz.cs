@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace FizzBuzzKata
+namespace FizzBuzz
 {
 
 	public static class FizzBuzz
@@ -17,9 +17,27 @@ namespace FizzBuzzKata
 				{
 					stringBuilder.Append( Environment.NewLine );
 				}
-				stringBuilder.Append( i );
+				stringBuilder.Append( GetOutput( i ) );
 			}
 			return stringBuilder.ToString();
+		}
+
+		public static string GetOutput( int i )
+		{
+
+			string result = string.Empty;
+
+			if ( i % 3 == 0 )
+			{
+				result = result + "Fizz";
+			}
+
+			if ( string.IsNullOrEmpty( result ) )
+			{
+				result = i.ToString();
+			}
+
+			return result;
 		}
 
 	}
