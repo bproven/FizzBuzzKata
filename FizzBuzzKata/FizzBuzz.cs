@@ -46,6 +46,10 @@ namespace FizzBuzz
 			{
 				result = "Fizz";
 			}
+			else if ( result.Contains( "5" ) )
+			{
+				result = "Buzz";
+			}
 
 			return result;
 		}

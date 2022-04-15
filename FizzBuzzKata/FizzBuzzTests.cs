@@ -60,14 +60,14 @@ Fizz
 49
 Buzz
 Fizz
-52
+Buzz
 Fizz
 Fizz
 Buzz
-56
+Buzz
 Fizz
-58
-59
+Buzz
+Buzz
 FizzBuzz
 61
 62
@@ -140,6 +140,12 @@ Buzz";
 		public void ExtraCredit1Test()
 		{
 			Assert.Equal( "Fizz", FizzBuzz.GetOutput( 13 ) );
+		}
+
+		[Fact]
+		public void ExtraCredit2Test()
+		{
+			Assert.Equal( "Buzz", FizzBuzz.GetOutput( 52 ) );
 		}
 
 		[Fact]
