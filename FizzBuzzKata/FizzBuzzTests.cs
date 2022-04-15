@@ -13,102 +13,102 @@ namespace FizzBuzz.Test
 2
 Fizz
 4
-5
+Buzz
 Fizz
 7
 8
 Fizz
-10
+Buzz
 11
 Fizz
 13
 14
-Fizz
+Buzz
 16
 17
 Fizz
 19
-20
+Buzz
 Fizz
 22
 23
 Fizz
-25
+Buzz
 26
 Fizz
 28
 29
-Fizz
+Buzz
 31
 32
 Fizz
 34
-35
+Buzz
 Fizz
 37
 38
 Fizz
-40
+Buzz
 41
 Fizz
 43
 44
-Fizz
+Buzz
 46
 47
 Fizz
 49
-50
+Buzz
 Fizz
 52
 53
 Fizz
-55
+Buzz
 56
 Fizz
 58
 59
-Fizz
+Buzz
 61
 62
 Fizz
 64
-65
+Buzz
 Fizz
 67
 68
 Fizz
-70
+Buzz
 71
 Fizz
 73
 74
-Fizz
+Buzz
 76
 77
 Fizz
 79
-80
+Buzz
 Fizz
 82
 83
 Fizz
-85
+Buzz
 86
 Fizz
 88
 89
-Fizz
+Buzz
 91
 92
 Fizz
 94
-95
+Buzz
 Fizz
 97
 98
 Fizz
-100";
+Buzz";
 			Assert.Equal( expected, FizzBuzz.GetOutput() );
 		}
 
@@ -122,6 +122,20 @@ Fizz
 		public void DivisibleByThreeTest2()
 		{
 			Assert.Equal( "Fizz", FizzBuzz.GetOutput( 3 ) );
+		}
+
+		[Fact]
+		public void DivisibleByFiveTest()
+		{
+			Assert.Equal( "Buzz", FizzBuzz.GetOutput( 5 ) );
+		}
+
+		public void MakeTestOutput()
+		{
+			for ( int i = 1; i <= 100; i++ )
+			{
+				System.Diagnostics.Debug.WriteLine( FizzBuzz.GetOutput( i ) );
+			}
 		}
 
 	}
