@@ -23,7 +23,7 @@ Buzz
 Fizz
 13
 14
-Buzz
+FizzBuzz
 16
 17
 Fizz
@@ -38,7 +38,7 @@ Buzz
 Fizz
 28
 29
-Buzz
+FizzBuzz
 31
 32
 Fizz
@@ -53,7 +53,7 @@ Buzz
 Fizz
 43
 44
-Buzz
+FizzBuzz
 46
 47
 Fizz
@@ -68,7 +68,7 @@ Buzz
 Fizz
 58
 59
-Buzz
+FizzBuzz
 61
 62
 Fizz
@@ -83,7 +83,7 @@ Buzz
 Fizz
 73
 74
-Buzz
+FizzBuzz
 76
 77
 Fizz
@@ -98,7 +98,7 @@ Buzz
 Fizz
 88
 89
-Buzz
+FizzBuzz
 91
 92
 Fizz
@@ -130,6 +130,13 @@ Buzz";
 			Assert.Equal( "Buzz", FizzBuzz.GetOutput( 5 ) );
 		}
 
+		[Fact]
+		public void DivisibleByThreeAndFiveTest()
+		{
+			Assert.Equal( "FizzBuzz", FizzBuzz.GetOutput( 3 * 5 ) );
+		}
+
+		[Fact]
 		public void MakeTestOutput()
 		{
 			for ( int i = 1; i <= 100; i++ )

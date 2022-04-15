@@ -29,12 +29,12 @@ namespace FizzBuzz
 
 			if ( i % 3 == 0 )
 			{
-				result = "Fizz";
+				result += "Fizz";
 			}
 
 			if ( i % 5 == 0 )
 			{
-				result = "Buzz";
+				result += "Buzz";
 			}
 
 			if ( string.IsNullOrEmpty( result ) )
