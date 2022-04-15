@@ -42,7 +42,11 @@ namespace FizzBuzz
 				result = i.ToString();
 			}
 
-			if ( result.Contains( "3" ) )
+			if ( result.Contains( "3" ) && result.Contains( "5" ) )
+			{
+				result = "FizzBuzz";
+			}
+			else if ( result.Contains( "3" ) )
 			{
 				result = "Fizz";
 			}

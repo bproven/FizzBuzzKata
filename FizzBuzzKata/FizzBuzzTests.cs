@@ -61,7 +61,7 @@ Fizz
 Buzz
 Fizz
 Buzz
-Fizz
+FizzBuzz
 Fizz
 Buzz
 Buzz
@@ -149,12 +149,9 @@ Buzz";
 		}
 
 		[Fact]
-		public void MakeTestOutput()
+		public void ExtraCredit3Test()
 		{
-			for ( int i = 1; i <= 100; i++ )
-			{
-				System.Diagnostics.Debug.WriteLine( FizzBuzz.GetOutput( i ) );
-			}
+			Assert.Equal( "FizzBuzz", FizzBuzz.GetOutput( 53 ) );
 		}
 
 	}
